@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --white: hsl(0, 0%, 100%);
+    --border-color: rgba( 0, 0, 0, 0.25 );
+    --text-color: rgba(0, 0, 0, 0.7);
+    --label-color: rgba( 0, 0, 0, 0.85 );
+    --label-sublabel-color: rgba(0, 0, 0, 0.55);
+    --label-error-color: hsl(360, 66%, 53%);
+    --button-background-color: hsl(204, 93%, 35%);
+
+    --main-clr: hsl(0, 0%, 0%);
+    --primary-clr: hsl(4, 100%, 71%);
+
+    --border-radius: 3px;
+}
+/* remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* dark mode user-agent-styles */
+html {
+    color-scheme: dark light;
+}
+
+/* min body height */
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100svh;
+}
+ul {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {text-wrap: balance; }
+
+a {
+    text-decoration: none;
+}
+/* responsive images / videos */
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+.heading-content {
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+.heading-content .section-title {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--main-clr);
+    position: relative;
+    text-align: center;
+    font-size: 26px;
+}
+@media(width < 768px) {
+    .heading-content .section-title {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .wrapper {
+    width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .wrapper {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 1170px;
+    }
+}
+.wrapper {
+    width: 100%;
+    padding-inline: 15px;
+    margin-block: auto;
+    font-size: 14px;
+}

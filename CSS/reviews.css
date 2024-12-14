@@ -1,0 +1,25 @@
+/* start review section */
+.reviews .wrapper .container .review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-end: 1rem;
+    flex-direction: row-reverse;
+}
+.review .thumb img {
+    border-radius: 3px;
+}
+.review-info .title {
+    line-height: normal;
+    display: block;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #666;
+    letter-spacing: -0.01em;
+}
+.review-info .name {
+    font-size: 12px;
+    display: block;
+    margin-top: 7px;
+}
+/* end review section */
